@@ -80,10 +80,13 @@ body {
   border: var(--name-color) solid 1px;
   border-radius: 24px;
   justify-content: center;
+  gap: 10px;
   align-items: center;
   left: 90px;
   bottom: -20px;
   background-color: var(--fondo);
+  font-weight: var(--semiBold);
+  font-size: var(--fontSize-small);
 }
 .product{
   position: relative;
