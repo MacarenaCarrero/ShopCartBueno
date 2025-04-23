@@ -21,7 +21,41 @@
         <button class="buttons">Price</button>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <div>
+          <div class="product">
+            <picture>
+              <source
+                media="(min-width: 1140px )"
+                srcset="assets/images/image-waffle-desktop.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="assets/images/image-waffle-tablet.jpg"
+              />
+              <source
+                media="(min-width: 360px)"
+                srcset="assets/images/image-waffle-mobile.jpg"
+              />
+              <img
+                class="image-product"
+                src="./assets/images/image-waffle-mobile.jpg"
+                alt=""
+              />
+            </picture>
+            <div class="container-addToCart">
+              <img
+                class="icon"
+                src="./assets/images/icon-add-to-cart.svg"
+                alt=""
+              />
+              <span>Add to Cart</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

@@ -52,7 +52,39 @@ body {
   background-color: var(--fondo);
   font-weight: var(--semiBold);
 }
+.product{
+  position: relative;
+}
+.button-active{
+  color:var(--fondo);
+  background-color: var(--primary-color);
+  border: var(--name-color) solid 1px;
+}
 .containerFilters {
   display: flex;
   gap: 18px;
+  margin-bottom: 26px;
+}
+.image-product{
+  border-radius: var(--border-button);
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}
+.container-addToCart{
+  position: absolute;
+  display: flex;
+  width: 160px;
+  height: 44px;
+  border: var(--name-color) solid 1px;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  left: 90px;
+  bottom: -20px;
+  background-color: var(--fondo);
+}
+.product{
+  position: relative;
 }
