@@ -20,5 +20,39 @@ nav ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Red Hat Text', sans-serif;
+  padding-inline: 14px;
+}
+:root {
+  /* font size  */
+  --fontSize-h1: 40px;
+  --fontSize-medium: 16px;
+  --fontSize-small: 14px;
+  /* font weight */
+  --bold: 700;
+  --semiBold: 600;
+  --regular: 400;
+  /* colores */
+  --primary-color: #c73b0f;
+  --name-color: #87635a;
+  --light-color: #f5eeec;
+  --fondo: #ffffff;
+  /* bordes */
+  --border-button: 16px;
+}
+.title {
+  font-size: var(--fontSize-h1);
+}
+.buttons {
+  width: 77px;
+  height: 34px;
+  font-size: var(--fontSize-small);
+  border-radius: var(--border-button);
+  border: var(--name-color) solid 1px;
+  background-color: var(--fondo);
+  font-weight: var(--semiBold);
+}
+.containerFilters {
+  display: flex;
+  gap: 18px;
 }
