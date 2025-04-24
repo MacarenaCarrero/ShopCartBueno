@@ -54,6 +54,8 @@ body {
 }
 .product{
   position: relative;
+  margin-bottom: 38px;
+ 
 }
 .button-active{
   color:var(--fondo);
@@ -63,10 +65,11 @@ body {
 .containerFilters {
   display: flex;
   gap: 18px;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
 }
 .image-product{
   border-radius: var(--border-button);
+  
 }
 .icon{
   width: 20px;
@@ -87,7 +90,22 @@ body {
   background-color: var(--fondo);
   font-weight: var(--semiBold);
   font-size: var(--fontSize-small);
+  
 }
-.product{
-  position: relative;
+.name-product{
+  display: flex;
+  flex-direction: column;
+}
+.small-name{
+  font-size: var(--fontSize-small);
+  color: var(--name-color);
+}
+.name{
+  font-size: var(--fontSize-medium);
+  font-weight: var(--semiBold);
+}
+.price{
+  color: var(--primary-color);
+  font-size: var(--fontSize-medium);
+  font-weight: var(--semiBold);
 }
