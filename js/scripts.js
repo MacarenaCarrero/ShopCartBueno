@@ -99,3 +99,51 @@ const PRODUCTS = [
     alt: 'Two crystal jars of panna cotta with cream.'
   }
 ];
+
+const buttonsFilterElement = document.getElementById('buttonsFilter');
+const containerProductsElement = document.getElementById('containerProducts');
+
+const productCard = product => {
+  //en esta funcion creara el div de product
+  const divproductElement = document.createElement('div');
+  divproductElement.classList.add('product'); //se quedara fuera el nombre?
+
+  const pictureElement = document.createElement('picture');
+
+  const sourceDesktopElement = document.createElement('source');
+  sourceDesktopElement.media = '(min-width: 1440px)';
+  sourceDesktopElement.srcset = product.imgDesktop;
+
+  const sourceTabletElement = document.createElement('source');
+  sourceTabletElement.media = '(max-width: 760px)';
+  sourceTabletElement.srcset = product.imgTablet;
+
+  const sourceMobileElement = document.createElement('source');
+  sourceMobileElement.media = '(max-width:360px)';
+  sourceMobileElement.srcset = product.imgMobile;
+
+  const imageElement = document.createElement('img');
+  imageElement.classList.add('image-product');
+  imageElement.srcset = product.imgMobile;
+  imageElement.alt = product.alt;
+
+  pictureElement.appendChild(sourceDesktopElement);
+  pictureElement.appendChild(sourceTabletElement);
+  pictureElement.appendChild(sourceMobileElement);
+  pictureElement.appendChild(imageElement);
+
+  divproductElement.appendChild(pictureElement);
+  return divproductElement;
+};
+
+const printsProducts = () => {
+  const fragment = document.createDocumentFragment();
+
+  PRODUCTS.forEach(product => {
+    const cards = productCard(product);
+    fragment.appendChild(cards);
+  });
+  containerProductsElement.appendChild(fragment);
+};
+
+printsProducts();
