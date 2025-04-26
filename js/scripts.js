@@ -106,7 +106,7 @@ const containerProductsElement = document.getElementById('containerProducts');
 const productCard = product => {
   //en esta funcion creara el div de product
   const divproductElement = document.createElement('div');
-  divproductElement.classList.add('product'); //se quedara fuera el nombre?
+  divproductElement.classList.add('product');
 
   const pictureElement = document.createElement('picture');
 
