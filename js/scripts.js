@@ -103,6 +103,9 @@ const PRODUCTS = [
 const buttonsFilterElement = document.getElementById('buttonsFilter');
 const containerProductsElement = document.getElementById('containerProducts');
 
+let cart = [];
+let quantity = 0;
+
 const productCard = product => {
   //en esta funcion creara el div de product
   const divproductElement = document.createElement('div');
